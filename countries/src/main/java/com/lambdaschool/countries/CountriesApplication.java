@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class CountriesApplication
 {
-    static CountryList countryList = new CountryList();
+    static CountryList ourCountries;
     public static void main(String[] args)
-
     {
+        ourCountries = new CountryList();
         SpringApplication.run(CountriesApplication.class, args);
     }
 
